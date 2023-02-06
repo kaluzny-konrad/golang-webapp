@@ -31,9 +31,6 @@ jobs:
     - name: Test
       run: go test -v ./...
       
-    - name: Building web app
-      uses: azure/appservice-build@v2
-      
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with: 
